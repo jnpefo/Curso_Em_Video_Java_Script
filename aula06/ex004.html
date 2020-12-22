@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            var nome = window.prompt('Qual é o seu nome?');
+            document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length}`);
+            document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br/>`);
+            document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`);
+
+            /*
+            Se tiver o seguinte contexto: var n1 = 1545.5 e mandar ver o n1 irá sair 1545.5.
+            Como aqui no Brazil temos o costume de vez o 0 no final, podemos usar o método .toFixed(), onde ao n1.toFixed(2), será impresso 1545,50.
+            Outra dica é usar o .replace(), ficando assim n1.toFixed(2).replace('.', ','), saindo 1545,50.
+
+            Outra dica é usar assim n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}), saindo impresso assim: R$ 1,545.50, caso queria outras moedas é somente mudar o final para USD, EUR....
+            */
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu primeiro programa...</title>
+        <style>
+            body {
+                background-color: rgb(73, 73, 156);
+                color: white;
+                font: normal 20pt arial;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Olá, mundo!</h1>
+        <p>Já me livrei da maldição!!</p>
+        <script>
+            var n1 = window.prompt('Digite um número: '); // as informações recebidas são em string
+            var n2 = window.prompt('Digite outro número: ');
+            var s = Number(n1) + Number(n2);
+            // window.alert('A soma dos valores é ' + String(s));
+            window.alert(`A soma entre ${n1} e ${n2} é ${String(s)}`);
+
+            /*
+            Podemos fazer conversão de string para número usando Number.parseInt() ou parseInt(), para inteiro;
+            Para Real Number.parseFloat() ou parseFloat();
+            Ou somente Number(), onde irá fazer a transformação.
+
+            Agora para transformar para string:
+            n.toString() ou String();
+
+            Outro detalhe para fazer uma concatenação, pode usar '' + variavél ou o template strings, onde se usa a crase `, ficará `texto ${variavél}`;
+
+            Para ver o tamanho usamos .length;
+            Para transformar em letras maiúsculas .toUpperCase();
+            Para transformar em letras minúsculas .toLowerCase();
+            */
+        </script>
+    </body>
+
+</html>
