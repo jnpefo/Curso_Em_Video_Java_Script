@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro</title>
+  </head>
+
+  <body>
+    <h1>Qual você mora?</h1> <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+    </div>
+    <script>
+      function verificar() {
+        var txtp = document.querySelector('#txtpais').value.toUpperCase();
+        var res = document.querySelector('#res');
+        res.innerHTML = `<p>Morando atualmente <strong>${txtp}</strong></p>`;
+        if (txtp == 'BRASIL') {
+          res.innerHTML += `<p>Você é Brasileiro!</p>`;
+        } else {
+          res.innerHTML += `<p>Você é Estrangeiro!</p>`
+        };
+      };
+    </script>
+  </body>
+
+</html>
